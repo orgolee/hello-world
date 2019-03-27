@@ -28,7 +28,7 @@
         },
         "streamSettings": {
             "network": "quic",
-            "security": "tls",
+            "security": "none",
             "quicSettings":{
                 "security": "aes-128-gcm",
                 "key": "iCErbDJB4r7RNyty5mKnFHr7xbHo8aYHTdYR4AFa",
