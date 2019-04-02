@@ -1,0 +1,10 @@
+{
+    "server":"0.0.0.0",
+    "server_port":9441,
+    "local_port":1080,
+    "password":"vsfx9900banwagong@lsjlsj",
+    "timeout":300,
+    "method":"aes-256-gcm",
+    "nameserver":"1.1.1.1",
+    "mode":"tcp_and_udp"
+}
