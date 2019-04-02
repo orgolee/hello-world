@@ -1,9 +1,0 @@
-{
-    "server":"69.171.76.7",
-    "server_port":15567,
-    "password":"vsfx9900banwagong@shouji",
-    "timeout":60,
-    "method":"chacha20-ietf-poly1305",
-    "nameserver":"1.1.1.1",
-    "mode":"tcp_and_udp"
-}
