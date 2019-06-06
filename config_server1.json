@@ -56,7 +56,7 @@
           "readBufferSize": 1,
           "writeBufferSize": 1,
           "header": {
-            "type": "dtls"
+            "type": "wechat-video"
           }
         }
       }
