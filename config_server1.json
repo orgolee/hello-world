@@ -25,7 +25,7 @@
   },
   "inbounds": [
     {
-      "port": 6698,
+      "port": 7894,
       "tag": "in-0",
       "protocol": "vmess",
       "settings": {
@@ -46,11 +46,11 @@
       },
       "streamSettings": {
         "network": "kcp",
-        "security": "tls",
+        "security": "none",
         "kcpSettings": {
           "mtu": 1350,
           "tti": 20,
-          "uplinkCapacity": 10,
+          "uplinkCapacity": 50,
           "downlinkCapacity": 100,
           "congestion": false,
           "readBufferSize": 1,
