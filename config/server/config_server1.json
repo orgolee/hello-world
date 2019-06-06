@@ -1,0 +1,72 @@
+{
+  "log": {
+    "access": "/var/log/v2ray/access.log",
+    "error": "/var/log/v2ray/error.log",
+    "loglevel": "warning"
+  },
+  "dns": {
+    "servers":[
+      "8.8.8.8",
+      "1.1.1.1",
+      "localhost"
+    ]
+  },
+  "routing": {
+    "rules": [
+      {
+        "type": "field",
+        "ip": [
+          "geoip:private"
+        ],
+        "outboundTag": "blocked"
+      }
+    ],
+    "domainStrategy": "AsIs"
+  },
+  "inbounds": [
+    {
+      "port": 6698,
+      "tag": "in-0",
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "555e3682-65ef-495b-93d7-695e3e6524a5",
+            "alterId": 144,
+            "security": "auto",
+            "level": 0
+          },
+          {
+            "id": "d9f03308-7863-d924-d4f4-22ba221626a1",
+            "alterId": 16,
+            "security": "auto",
+            "level": 0
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "quic",
+        "security": "none",
+        "quicSettings": {
+          "security": "aes-128-gcm",
+          "key": "TJKCrHsY96MoamnmPpa9hjiK7Ej9SxzsDpDMrDDB",
+          "header": {
+            "type": "dtls"
+          }
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {},
+      "tag": "direct"
+    },
+    {
+      "tag": "blocked",
+      "settings": {},
+      "protocol": "blackhole"
+    }
+  ]
+}
